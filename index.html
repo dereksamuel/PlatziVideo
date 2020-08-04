@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./font-icon/style.css">
+  <title>Platzi Video</title>
+</head>
+
+<body>
+  <div class="app">
+    <i class="icon-menu-burger" id="menu-burger"></i>
+    <section class="menu">
+      <div class="logo">
+        <h1><strong style="color: white;">Platzi</strong><strong style="color: #ec2b3b;">Video</strong></h1>
+      </div>
+      <div class="myPlaylist">
+        <p>Mi Playlist</p>
+        <ol>
+          <li><span>1</span> HHk</li>
+          <li><span>2</span> No te vayas</li>
+          <li><span>3</span> Un Año</li>
+          <li><span>4</span> Perdón</li>
+          <li><span>5</span> Luz de día</li>
+          <li><span>6</span> HHk</li>
+          <li><span>7</span> HHk</li>
+          <li><span>8</span> HHk</li>
+        </ol>
+      </div>
+      <div class="playlistFriends">
+        <p>Playlist de amigos</p>
+        <ul>
+          <li><i class="icon-username"></i> Derek</li>
+          <li><i class="icon-username"></i> Samuel</li>
+          <li><i class="icon-username"></i> Paúl</li>
+          <li><i class="icon-username"></i> Peña</li>
+          <li><i class="icon-username"></i> Joaquín</li>
+        </ul>
+      </div>
+    </section>
+    <div class="hero">
+      <iframe src="https://www.youtube.com/embed/JJQoPDFbVbA" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        class="hero-video"></iframe>
+    </div>
+    <div class="options">
+      <div class="option-2" style="margin: 0; margin: 15px;">
+        <h4 style="margin: 0;">Bloopers Platzi 2017</h4>
+        <p style="color: #BDBDBD; margin: 0;">152,2563 vistas</p>
+      </div>
+      <div class="option-1">
+        <button
+          style="height: 35px; border-radius: 10px; margin-right: 20px; margin-left: 20px; background: linear-gradient(to right, red, pink); color: white; font-size: 1em; border: none;">Agregar
+          a mi lista</button>
+        <div style="height: 35px; border-radius: 10px; margin-right: 20px; text-align: center; color: #3D4550;">
+          <i class="icon-comp"></i>
+          <p>Compartir</p>
+        </div>
+        <div style="height: 35px; border-radius: 10px; margin-right: 20px; text-align: center; color: #3D4550;">
+          <i class="icon-down"></i>
+          <p>Guardar</p>
+        </div>
+        <p class="type-bloopers">Bloopers</p>
+        <p class="type-recientes">Recientes</p>
+      </div>
+    </div>
+    <div class="comments">
+      <h3>Comentarios</h3>
+      <input type="text"
+        style="width: 50vw; height: 25px; max-width: 550px; background-color:#F2F2F2; border-radius: 5px; padding: 5px; border: none;"
+        placeholder="Añade tu comentario">
+      <div class="content">
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+        <p><i class="icon-username"></i> Este video está bien</p>
+      </div>
+    </div>
+    <div class="critics">
+      <h3>Sugerencias</h3>
+      <div class="content-critics">
+        <a href=""><img src="https://i.ytimg.com/vi/rkXub9mPuHg/maxresdefault.jpg" alt="" width="400px"></a>
+        <p>Platzi bloopers 2016</p>
+        <hr>
+      </div>
+      <div class="content-critics">
+        <a href=""><img src="https://i.ytimg.com/vi/rkXub9mPuHg/maxresdefault.jpg" alt="" width="400px"></a>
+        <p>Platzi bloopers 2016</p>
+        <hr>
+      </div>
+      <div class="content-critics">
+        <a href=""><img src="https://i.ytimg.com/vi/rkXub9mPuHg/maxresdefault.jpg" alt="" width="400px"></a>
+        <p>Platzi bloopers 2016</p>
+        <hr>
+      </div>
+      <div class="content-critics">
+        <a href=""><img src="https://i.ytimg.com/vi/rkXub9mPuHg/maxresdefault.jpg" alt="" width="400px"></a>
+        <p>Platzi bloopers 2016</p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <script>
+    const menu = document.querySelector('.menu');
+    const button = document.querySelector('#menu-burger');
+    const clase = 'is-active';
+    console.log(menu, button);
+
+    button.addEventListener('click', () => {
+      if (menu.classList.contains(clase)) {
+        menu.classList.remove(clase);
+      } else {
+        menu.classList.add(clase);
+      }
+    });
+  </script>
+</body>
+
+</html>
